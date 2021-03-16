@@ -1,6 +1,6 @@
 package com.vactrole.cadastroapi.services.interfaces.usuario;
 
-import com.vactrole.cadastroapi.errors.usuario.CadastroNotFoundException;
+import com.vactrole.cadastroapi.errors.CadastroNotFoundException;
 import com.vactrole.cadastroapi.models.CadastroUsuario;
 
 import java.util.List;

@@ -1,6 +1,6 @@
 package com.vactrole.cadastroapi.resources;
 
-import com.vactrole.cadastroapi.errors.usuario.CadastroNotFoundException;
+import com.vactrole.cadastroapi.errors.CadastroNotFoundException;
 import com.vactrole.cadastroapi.models.CadastroUsuario;
 import com.vactrole.cadastroapi.services.CadastroUsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import javax.validation.Valid;
 import java.net.URI;
 
 @RestController
-@RequestMapping(value = "/CadastroUsuario")
+@RequestMapping(value = "/cadastroUsuario")
 public class CadastroUsuarioResource {
 
     @Autowired

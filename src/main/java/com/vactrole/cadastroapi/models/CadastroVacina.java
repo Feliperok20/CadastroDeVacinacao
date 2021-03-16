@@ -1,9 +1,6 @@
 package com.vactrole.cadastroapi.models;
 
-import org.hibernate.validator.constraints.br.CPF;
-
 import javax.persistence.*;
-import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import java.util.Objects;
 
@@ -17,9 +14,7 @@ public class CadastroVacina {
     private String name;
     @NotEmpty(message = "Preenchimento obrigatório")
     private String data;
-    @NotEmpty(message = "Preenchimento obrigatório")
-    @Email(message = "E-mail inválido")
-    private String email;
+
 
     @ManyToOne
     private CadastroUsuario usuario;
@@ -28,10 +23,9 @@ public class CadastroVacina {
 
     }
 
-    public CadastroVacina(String name, String data, String email) {
+    public CadastroVacina(String name, String data) {
         this.name = name;
         this.data = data;
-        this.email = email;
     }
 
     public String getName() {
@@ -53,14 +47,6 @@ public class CadastroVacina {
 
     public Long getId() {
         return id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 
     public void setId(Long id) {

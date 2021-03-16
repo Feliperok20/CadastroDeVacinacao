@@ -1,6 +1,6 @@
 package com.vactrole.cadastroapi.resources.exeption;
 
-import com.vactrole.cadastroapi.errors.vacina.CadastroNotFoundException;
+import com.vactrole.cadastroapi.errors.CadastroNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

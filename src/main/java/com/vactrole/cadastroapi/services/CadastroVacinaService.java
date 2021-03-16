@@ -1,7 +1,6 @@
 package com.vactrole.cadastroapi.services;
 
-import com.vactrole.cadastroapi.errors.vacina.CadastroNotFoundException;
-import com.vactrole.cadastroapi.models.CadastroUsuario;
+import com.vactrole.cadastroapi.errors.CadastroNotFoundException;
 import com.vactrole.cadastroapi.models.CadastroVacina;
 import com.vactrole.cadastroapi.repositories.CadastroVacinaRepository;
 import com.vactrole.cadastroapi.services.interfaces.vacina.CadastroService;

@@ -1,6 +1,6 @@
 package com.vactrole.cadastroapi.services.interfaces.vacina;
 
-import com.vactrole.cadastroapi.errors.usuario.CadastroNotFoundException;
+import com.vactrole.cadastroapi.errors.CadastroNotFoundException;
 import com.vactrole.cadastroapi.models.CadastroVacina;
 
 import java.util.List;

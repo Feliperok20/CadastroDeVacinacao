@@ -2,7 +2,7 @@ package com.vactrole.cadastroapi.resources;
 
 
 
-import com.vactrole.cadastroapi.errors.vacina.CadastroNotFoundException;
+import com.vactrole.cadastroapi.errors.CadastroNotFoundException;
 import com.vactrole.cadastroapi.models.CadastroVacina;
 import com.vactrole.cadastroapi.services.CadastroVacinaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import javax.validation.Valid;
 import java.net.URI;
 
 @RestController
-@RequestMapping(value = "/CadastroVacina")
+@RequestMapping(value = "/cadastroVacina")
 public class CadastroVacinaResource {
 
     @Autowired
